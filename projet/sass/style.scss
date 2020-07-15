@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@import "libs/grid.scss";
+@import "libs/buttons.scss";
+@import "libs/images.scss";
+@import "libs/couleurs.scss";
+@import "libs/alerts.scss";
+@import "libs/navbars.scss";
+@import "libs/modals.scss";
+@import "libs/onglets.scss";

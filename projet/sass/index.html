@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Own Bootstrap</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal" hidden id="myModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Modal Title</h2>
+                    <button class="close popin-dimiss">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col col-md-4">.col-md-4</div>
+                            <div class="col col-md-4 col-xl-2">.col-md-4 .col-xl-2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-3 col-xl-2">.col-md-3 .col-xl-2</div>
+                            <div class="col col-md-2 col-xl-2">.col-md-2 .col-xl-2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-6 col-xl-12">.col-md-6 .col-xl-12</div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-sm-9">
+                                Level 1: .col-sm-9
+                                <div class="row">
+                                    <div class="col col-8 col-sm-6">
+                                        Level 2: .col-8 .col-sm-6
+                                    </div>
+                                    <div class="col col-4 col-sm-6">
+                                        Level 2: .col-4 .col-sm-6
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary btn-lg popin-dimiss">Close</button>
+                    <button class="btn btn-primary btn-lg popin-dimiss">Ok</button>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div>
+                <ul class="nav">
+                    <div>
+                        <li><a class="navbar navbar-brand" href="#">Navbar</a></li>
+                        <li><a class="navbar active" href="#">Home</a></li>
+                        <li><a class="navbar" href="#">Link</a></li>
+                        <ul class="navbar dropdown">
+                            <li><a class="navbar dropdown_login" href="#">Dropdown</a>
+                                <ul>
+                                    <li class="dropdown-item"><a href="#" id="compte">Action</a></li>
+                                    <li class="dropdown-item"><a href="#" id="modiff">Another action</a></li>
+                                    <li>
+                                        <div class="dropdown-item dropdown-divider"></div>
+                                    </li>
+                                    <li class="dropdown-item"><a href="#" id="fermer">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a class="navbar disabled" href="#">Disabled</a></li>
+                    </div>
+                    <div>
+                        <li><input class="navbar navbar" type="search" placeholder="Search"></li>
+                        <li><a class="btn btn-outline-danger navbar" href="#">Search</a></li>
+                    </div>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col btn btn-outline-info btn-lg" id="testModal" data-target="#myModal">Test Modals</div>
+            </div>
+
+            <div class="row">
+                <button class="btn btn-primary btn-lg tooltip" title="test1">Primary</button>
+                <button class="btn btn-secondary btn-sm tooltip" title="test2">Secondary</button>
+                <button class="btn btn-success btn-lg tooltip" title="test3">Success</button>
+                <button class="btn btn-danger btn-lg tooltip" title="test4">Danger</button>
+                <button class="btn btn-warning btn-sm tooltip" title="test5">Warning</button>
+                <button class="btn btn-info btn-lg tooltip" title="test6">Info</button>
+                <button class="btn btn-light btn-sm tooltip" title="test7">Light</button>
+                <button class="btn btn-dark btn-lg tooltip" title="test8">Dark</button>
+                <button class="btn btn-link btn-sm tooltip" title="test9">Link</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-outline-primary btn-lg">primary</button>
+                <button class="btn btn-outline-secondary btn-lg">secondary</button>
+                <button class="btn btn-outline-success btn-lg">success</button>
+                <button class="btn btn-outline-danger btn-lg">danger</button>
+                <button class="btn btn-outline-warning btn-lg">warning</button>
+                <button class="btn btn-outline-info btn-lg">info</button>
+                <button class="btn btn-outline-light btn-lg">light</button>
+                <button class="btn btn-outline-dark btn-lg">Dark</button>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary active">Primary</button>
+                <button class="btn btn-secondary disabled">Secondary</button>
+                <button class="btn btn-success active">Success</button>
+                <button class="btn btn-danger btn-lg disabled">Danger</button>
+                <button class="btn btn-warning disabled">Warning</button>
+                <button class="btn btn-info active">Info</button>
+                <button class="btn btn-light disabled">Light</button>
+                <button class="btn btn-dark active">Dark</button>
+                <button class="btn btn-link disabled">Link</button>
+            </div>
+            <div class="row xl-hidden">
+                <p class="text-primary bg-light col-xs-1">Primary</p>
+                <p class="text-secondary bg-dark col-xs-2">secondary</p>
+                <p class="text-success bg-warning col-xs-1">success</p>
+                <p class="text-danger bg-info col-xs-2">danger</p>
+                <p class="text-warning bg-success col-xs-1">warning</p>
+                <p class="text-info bg-danger col-xs-1">info</p>
+                <p class="text-light bg-primary col-xs-1">light</p>
+                <p class="text-dark bg-secondary col-xs-1">dark</p>
+                <p class="text-error bg-light col-xs-2">error</p>
+            </div>
+            <div class="row">
+                <div class="col col-xs-6 col-xs-6 alert alert-primary">
+                    alert-primary
+                </div>
+                <div class="col col-xs-6 col-xs-6 alert alert-secondary">
+                    alert-secondary
+                </div>
+            </div>
+            <div class="row alert alert-success">
+                alert-success
+            </div>
+            <div class="row alert alert-danger">
+                alert-danger
+            </div>
+            <div class="row alert alert-warning">
+                alert-warning
+            </div>
+            <div class="row alert alert-info">
+                alert-info
+            </div>
+            <div class="row alert alert-light">
+                alert-light
+            </div>
+            <div class="row alert alert-dark">
+                alert-dark
+            </div>
+
+            <ul class="tab-list">
+                <li class="tab-item navbar active" data-target="#home">Home</li>
+                <li class="tab-item navbar" data-target="#profile">Profile</li>
+                <li class="tab-item navbar" data-target="#contact" href="#">Contact</li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.<br>Reprehenderit, labore nam ab accusamus facere, perferendis quae
+                    officiis ullam ut nulla sequi
+                    similique iusto maxime assumenda exercitationem provident at quos modi? Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. <br>Quo perspiciatis ipsum reprehenderit cupiditate rerum illum.
+                    Perspiciatis saepe sit laboriosam delectus nobis eaque aliquid fuga molestias, voluptatum placeat
+                    rem laudantium maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum obcaecati
+                    dicta quas veritatis. Voluptatem voluptates eum quae animi hic perferendis neque ex. Consequuntur
+                    consectetur alias similique quasi recusandae obcaecati optio! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. <br>Reiciendis tenetur ut saepe temporibus dolorem quaerat eligendi eaque totam
+                    est
+                    laborum tempora numquam, illum delectus mollitia facilis, aut sint. Illum, inventore? Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Voluptas, saepe optio dolorem vitae vero itaque quam
+                    eaque dignissimos magnam natus tenetur. <br>Ut eius, officiis voluptatibus nemo animi ipsum.
+                    Asperiores,
+                    adipisci? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quidem fuga
+                    doloremque, dolor ducimus cupiditate quibusdam ea consequuntur optio enim magnam, nam dolorum ipsam
+                    accusantium minus dolore modi, nostrum quia!</div>
+                <div class="tab-pane" id="profile">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+                    voluptatem, accusantium optio, in sequi nobis quaerat qui minima, aperiam dignissimos mollitia
+                    facilis alias! Aliquid, eos nemo. Molestias laborum voluptates maxime.
+                </div>
+                <div class="tab-pane" id="contact">Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.<br>Reprehenderit, labore nam ab accusamus facere, perferendis quae
+                    officiis ullam ut nulla sequi
+                    similique iusto maxime assumenda exercitationem provident at quos modi?Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Quo perspiciatis ipsum reprehenderit cupiditate rerum illum.
+                    Perspiciatis saepe sit laboriosam delectus nobis eaque aliquid fuga molestias, voluptatum placeat
+                    rem laudantium maiores. <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+                    obcaecati
+                    dicta quas veritatis. Voluptatem voluptates eum quae animi hic perferendis neque ex. Consequuntur
+                    consectetur alias similique quasi recusandae obcaecati optio! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. <br>Reiciendis tenetur ut saepe temporibus dolorem quaerat eligendi eaque totam
+                    est
+                    laborum tempora numquam, illum delectus mollitia facilis, aut sint. Illum, inventore? Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Voluptas, saepe optio dolorem vitae vero itaque quam
+                    eaque dignissimos magnam natus tenetur. Ut eius, officiis voluptatibus nemo animi ipsum. Asperiores,
+                    adipisci? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quidem fuga
+                    doloremque, dolor ducimus cupiditate quibusdam ea consequuntur optio enim magnam, nam dolorum ipsam
+                    accusantium minus dolore modi, nostrum quia</div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="row">
+                <div class="col-xs-6 col-lg-8 col-xl-2  xl-hidden visible-print">
+                    <img src="../utils/Brave_Heart.jpg" alt="film1" class="img-responsive img-rounded">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-lg-8 col-xl-2">
+                    <img src="../utils/kingdom_of_heaven.jpg" alt="film2" class="img-responsive img-circle">
+                </div>
+                <div class="col-xs-6 col-lg-8 col-xl-2">
+                    <img src="../utils/Labyrinthe.jpg" alt="film3" class="img-responsive img-thumbnail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-lg-8 col-xl-2">
+                    <img src="../utils/seigneurdesanneaux2-2.jpg" alt="film4" class="img-responsive img-blur">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../utils/jQuery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown li').hover(function () {
+                $('ul:first', this).stop().slideDown();
+            }, function () {
+                $('ul:first', this).stop().slideUp();
+            });
+
+            $('#testModal').click(function () {
+                $('#myModal').css("display", "block");
+            });
+            $('.popin-dimiss').click(function () {
+                $('#myModal').css("display", "none");
+            })
+            $('.modal').click(function () {
+                $('#myModal').css("display", "none");
+            });
+
+            $('.tab-item').click(function () {
+                $($(this).data('target')).show();
+                $('.tab-pane').not($(this).data('target')).hide();
+            })
+            // passer le active avec remouve de $('li ou ul :first') à $(this)
+        });
+    </script>
+</body>
+
+</html>
